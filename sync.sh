@@ -1,31 +1,36 @@
 # .local/share
-(ln -s ~/dotfiles/.local/share ~/.local/share)
+mkdir ~/.local
+mkdir ~/.local/share
+(ln -sf ~/dotfiles/.local/share ~/.local/share)
 
 # .config
-(ln -s ~/dotfiles/.config/htop ~/.config/htop)
-(ln -s ~/dotfiles/.config/kitty ~/.config/kitty)
-(ln -s ~/dotfiles/.config/ranger ~/.config/ranger)
-(ln -s ~/dotfiles/.config/bat ~/.config/bat)
+mkdir ~/.config
+(ln -sf ~/dotfiles/.config/htop ~/.config/htop)
+(ln -sf ~/dotfiles/.config/kitty ~/.config/kitty)
+(ln -sf ~/dotfiles/.config/bat ~/.config/bat)
 
 
 # dotfiles
-(ln -s ~/dotfiles/.zshrc ~/)
-(ln -s ~/dotfiles/.weechat ~/)
-(ln -s ~/dotfiles/.mutt ~/)
-(ln -s ~/dotfiles/.notmuch-config ~/)
-(ln -s ~/dotfiles/.neomuttrc ~/)
-(ln -s ~/dotfiles/.tmux.conf ~/)
-(ln -s ~/dotfiles/.taskrc ~/)
-(ln -s ~/dotfiles/.oh-my-zsh ~/)
-(ln -s ~/dotfiles/.asdf ~/)
-(ln -s ~/dotfiles/.tmux ~/)
-(ln -s ~/dotfiles/.bin ~/)
-(ln -s ~/dotfiles/.neomuttrc ~/)
-(ln -s ~/dotfiles/.offlineimaprc ~/)
-(ln -s ~/dotfiles/.tool-versions ~/)
-(ln -s ~/dotfiles/.zgen ~/)
-(ln -s ~/dotfiles/.asdf ~/)
+(ln -sf ~/dotfiles/.zshrc ~/)
+(ln -sf ~/dotfiles/.weechat ~/)
+(ln -sf ~/dotfiles/.mutt ~/)
+(ln -sf ~/dotfiles/.notmuch-config ~/)
+(ln -sf ~/dotfiles/.neomuttrc ~/)
+(ln -sf ~/dotfiles/.tmux.conf ~/)
+(ln -sf ~/dotfiles/.taskrc ~/)
+(ln -sf ~/dotfiles/.oh-my-zsh ~/)
+(ln -sf ~/dotfiles/.asdf ~/)
+(ln -sf ~/dotfiles/.tmux ~/)
+(ln -sf ~/dotfiles/.bin ~/)
+(ln -sf ~/dotfiles/.neomuttrc ~/)
+(ln -sf ~/dotfiles/.offlineimaprc ~/)
+(ln -sf ~/dotfiles/.tool-versions ~/)
+(ln -sf ~/dotfiles/.zgen ~/)
+(ln -sf ~/dotfiles/.asdf ~/)
 
-(ln -s ~/dotfiles/.config/ranger/rc.conf ~/.config/ranger/rc.conf)
-(ln -s ~/dotfiles/.config/ranger/scope.sh ~/.config/ranger/scope.sh)
-(ln -s ~/dotfiles/.config/ranger/rifle.conf ~/.config/ranger/rifle.conf)
+# Ranger setup - because its a bit more specific
+mkdir ~/.config/ranger
+(ln -sf ~/dotfiles/.config/ranger ~/.config/ranger)
+(ln -sf ~/dotfiles/.config/ranger/rc.conf ~/.config/ranger/rc.conf)
+(ln -sf ~/dotfiles/.config/ranger/scope.sh ~/.config/ranger/scope.sh)
+(ln -sf ~/dotfiles/.config/ranger/rifle.conf ~/.config/ranger/rifle.conf)
