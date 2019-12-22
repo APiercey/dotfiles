@@ -1,10 +1,10 @@
 # .local/share
-mkdir ~/.local
-mkdir ~/.local/share
+mkdir -p ~/.local
+mkdir -p ~/.local/share
 (ln -sf ~/dotfiles/.local/share ~/.local/share)
 
 # .config
-mkdir ~/.config
+mkdir -p ~/.config
 (ln -sf ~/dotfiles/.config/htop ~/.config/htop)
 (ln -sf ~/dotfiles/.config/kitty ~/.config/kitty)
 (ln -sf ~/dotfiles/.config/bat ~/.config/bat)
@@ -29,7 +29,7 @@ mkdir ~/.config
 (ln -sf ~/dotfiles/.asdf ~/)
 
 # Ranger setup - because its a bit more specific
-mkdir ~/.config/ranger
+mkdir -p ~/.config/ranger
 (ln -sf ~/dotfiles/.config/ranger ~/.config/ranger)
 (ln -sf ~/dotfiles/.config/ranger/rc.conf ~/.config/ranger/rc.conf)
 (ln -sf ~/dotfiles/.config/ranger/scope.sh ~/.config/ranger/scope.sh)
