@@ -1,6 +1,6 @@
 [submodule "pure_prompt"]
 	path = pure_prompt
 	url = https://github.com/sindresorhus/pure.git
-[submodule "zgen"]
-	path = zgen
+[submodule ".zgen"]
+	path = .zgen
 	url = https://github.com/tarjoilija/zgen.git
