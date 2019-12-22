@@ -14,5 +14,3 @@ node_modules
 .config/coc/*.json
 .local/share/nvim/shada/main.shada
 .local/share/ranger/history
-.config/nvim/.netrwhist
-.vim/plugged/
