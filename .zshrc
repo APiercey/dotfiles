@@ -1,4 +1,4 @@
-zmodload zsh/zprof
+# zmodload zsh/zprof
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/bin
 

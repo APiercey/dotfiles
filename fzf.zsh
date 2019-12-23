@@ -1,3 +1,5 @@
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
 # If FZF does not exist, don't continue
 if ! command -v fzf > /dev/null 2>&1; then
   return 0;
@@ -24,4 +26,3 @@ fs() {
 		| xargs tmux switch-client -t
 }
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
