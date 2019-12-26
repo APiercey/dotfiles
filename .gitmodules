@@ -7,3 +7,6 @@
 [submodule ".asdf"]
 	path = .asdf
 	url = https://github.com/asdf-vm/asdf.git
+[submodule "zsh_plugins/fzf-marks"]
+	path = zsh_plugins/fzf-marks
+	url = https://github.com/urbainvaes/fzf-marks.git
