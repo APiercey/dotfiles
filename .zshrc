@@ -33,7 +33,7 @@ source ~/dotfiles/go.zsh
 alias weather="curl wttr.in/Berlin"
 alias ll='ls -lhaG'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
-alias profile='repeat 5 /usr/bin/time zsh -i -c exit'
+alias profile='repeat 5 time zsh -i -c exit'
 
 # Functions
 
