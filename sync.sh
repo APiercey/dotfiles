@@ -1,7 +1,6 @@
 # .local/share
 mkdir -p ~/.local
 mkdir -p ~/.local/share
-(ln -sf ~/dotfiles/.local/share ~/.local/share)
 
 # .config
 mkdir -p ~/.config
