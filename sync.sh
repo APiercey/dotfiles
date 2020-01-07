@@ -16,7 +16,6 @@ mkdir -p ~/.config
 (ln -sf ~/dotfiles/.asdf ~/)
 (ln -sf ~/dotfiles/.tmux ~/)
 (ln -sf ~/dotfiles/.bin ~/)
-(ln -sf ~/dotfiles/.tool-versions ~/)
 (ln -sf ~/dotfiles/.zgen ~/)
 (ln -sf ~/dotfiles/.asdf ~/)
 
