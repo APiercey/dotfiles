@@ -11,6 +11,7 @@ prompt pure
 
 # Setup Files
 source ~/dotfiles/fzf.zsh
+source ~/dotfiles/asdf.zsh
 source ~/dotfiles/direnv.zsh
 source ~/dotfiles/tmuxinator.zsh
 source ~/dotfiles/aptitude.zsh
@@ -21,7 +22,6 @@ source ~/dotfiles/nvim.zsh
 source ~/dotfiles/tmux.zsh
 source ~/dotfiles/docker.zsh
 source ~/dotfiles/fzm.zsh
-source ~/dotfiles/asdf.zsh
 source ~/dotfiles/web_search.zsh
 
 # Language files
@@ -39,10 +39,5 @@ alias profile='repeat 5 time zsh -i -c exit'
 
 # Machine specific setup
 [ -f ~/.custom.zsh ] && source ~/.custom.zsh
-
-# ASDF Has some issues about not loading last...
-. $HOME/.asdf/asdf.sh
-
-. $HOME/.asdf/completions/asdf.bash
 
 # zprof
