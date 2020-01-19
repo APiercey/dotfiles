@@ -12,7 +12,6 @@ mkdir -p ~/.config
 (ln -sf ~/dotfiles/.zshrc ~/)
 (ln -sf ~/dotfiles/.weechat ~/)
 (ln -sf ~/dotfiles/.tmux.conf ~/)
-(ln -sf ~/dotfiles/.taskrc ~/)
 (ln -sf ~/dotfiles/.asdf ~/)
 (ln -sf ~/dotfiles/.tmux ~/)
 (ln -sf ~/dotfiles/.bin ~/)
