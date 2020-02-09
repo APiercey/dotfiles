@@ -1,0 +1,14 @@
+#!/bin/bash
+bundle_install() {
+  cd $1 
+  bundle install
+}
+
+install_all_gems() {
+  find . -type f -name 'Gemfile' | sed -r 's|/[^/]+$||' |sort |uniq | while read line; do
+    echo "Executing bundle install for $line"
+    $(bundle_install $line) &
+  done
+}
+
+install_all_gems
