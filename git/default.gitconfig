@@ -1,3 +1,6 @@
+[core]
+	pager = bat --color=always --theme=OneHalfDark --style=header --line-range :300
+
 [init]
   templatedir = ~/dotfiles/git/repo_template
 
