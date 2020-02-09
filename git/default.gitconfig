@@ -1,3 +1,6 @@
+[init]
+  templatedir = ~/dotfiles/git/repo_template
+
 [alias]
   stat = !git diff --stat $(git merge-base HEAD \"$REVIEW_BASE\")
   files = !git diff --name-only $(git merge-base HEAD \"$REVIEW_BASE\")
