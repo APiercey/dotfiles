@@ -18,9 +18,6 @@ mkdir -p ~/.config
 (ln -sf ~/dotfiles/.zgen ~/)
 (ln -sf ~/dotfiles/.asdf ~/)
 
-# git setup
-(ln -sf ~/dotfiles/.git_template ~/)
-
 # Ranger setup - because its a bit more specific
 mkdir -p ~/.config/ranger
 (ln -sf ~/dotfiles/.config/ranger ~/.config/ranger)
