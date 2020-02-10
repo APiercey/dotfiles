@@ -38,7 +38,7 @@ function web_search() {
     url="${(j://:)${(s:/:)urls[$1]}[1,2]}"
   fi
 
-  open "$url"
+  xdg-open "$url"
 }
 
 
