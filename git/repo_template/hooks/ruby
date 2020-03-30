@@ -3,7 +3,7 @@ bundle_install() {
   cd $1 
 
   if [ "$TMUX" ]; then
-    tmux new-window bundle install
+    tmux new-window -d bundle install
   else
     bundle install
   fi
