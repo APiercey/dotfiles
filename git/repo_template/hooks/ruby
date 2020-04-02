@@ -7,14 +7,26 @@ bundle_install() {
   else
     bundle install
   fi
-  
 }
 
-install_all_gems() {
+gem_ctags() {
+  cd $1 
+
+  if [ "$TMUX" ]; then
+    tmux new-window -d gem ctags
+  else
+    gem ctags
+  fi
+}
+
+find_gemfiles_and_run_tools() {
   find . -type f -name 'Gemfile' | sed -r 's|/[^/]+$||' |sort |uniq | while read line; do
     echo "Executing bundle install for $line"
     $(bundle_install $line) &
+
+    echo "Executing gem ctags"
+    $(gem_ctags $line) &
   done
 }
 
-install_all_gems
+find_gemfiles_and_run_tools
