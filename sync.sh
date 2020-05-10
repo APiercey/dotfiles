@@ -16,7 +16,6 @@ mkdir -p ~/.config
 (ln -sf ~/dotfiles/.tmux ~/)
 (ln -sf ~/dotfiles/.bin ~/)
 (ln -sf ~/dotfiles/.zgen ~/)
-(ln -sf ~/dotfiles/.asdf ~/)
 
 # Ranger setup - because its a bit more specific
 mkdir -p ~/.config/ranger

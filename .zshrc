@@ -21,7 +21,6 @@ source ~/dotfiles/git.zsh
 source ~/dotfiles/nvim.zsh
 source ~/dotfiles/tmux.zsh
 source ~/dotfiles/docker.zsh
-source ~/dotfiles/fzm.zsh
 source ~/dotfiles/web_search.zsh
 
 # Language files
