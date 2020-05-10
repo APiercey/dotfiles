@@ -5,10 +5,6 @@ export PATH=$PATH:~/bin
 # Main config files
 source ~/dotfiles/zsh.zsh
 
-# For shell prompt
-autoload -U promptinit; promptinit
-prompt pure
-
 # Setup Files
 source ~/dotfiles/fzf.zsh
 source ~/dotfiles/asdf.zsh
@@ -22,6 +18,9 @@ source ~/dotfiles/nvim.zsh
 source ~/dotfiles/tmux.zsh
 source ~/dotfiles/docker.zsh
 source ~/dotfiles/web_search.zsh
+source ~/dotfiles/forgit.zsh
+source ~/dotfiles/zsh-256color.zsh
+source ~/dotfiles/fancy-ctrl-z.zsh
 
 # Language files
 source ~/dotfiles/elixir.zsh
@@ -33,10 +32,19 @@ alias weather="curl wttr.in/Berlin"
 alias ll='ls -lhaG'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias profile='repeat 5 time zsh -i -c exit'
+alias zshconfig="vim ~/.zshrc"
+
+# Prezto
+source ~/dotfiles/.zprezto/init.zsh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=59'
 
 # Functions
 
+# Bindings
+bindkey '^z' fancy-ctrl-z
 # Machine specific setup
+# 
+
 [ -f ~/.custom.zsh ] && source ~/.custom.zsh
 
 # zprof

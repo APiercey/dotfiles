@@ -5,7 +5,6 @@ mkdir -p ~/.local/share
 # .config
 mkdir -p ~/.config
 (ln -sf ~/dotfiles/.config/htop ~/.config/htop)
-(ln -sf ~/dotfiles/.config/kitty ~/.config/kitty)
 (ln -sf ~/dotfiles/.config/bat ~/.config/bat)
 
 # dotfiles
@@ -15,7 +14,7 @@ mkdir -p ~/.config
 (ln -sf ~/dotfiles/.asdf ~/)
 (ln -sf ~/dotfiles/.tmux ~/)
 (ln -sf ~/dotfiles/.bin ~/)
-(ln -sf ~/dotfiles/.zgen ~/)
+(ln -sf ~/dotfiles/.zpreztorc ~/)
 
 # Ranger setup - because its a bit more specific
 mkdir -p ~/.config/ranger
