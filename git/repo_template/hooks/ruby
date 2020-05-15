@@ -20,7 +20,7 @@ gem_ctags() {
 }
 
 find_gemfiles_and_run_tools() {
-  find . -type f -name 'Gemfile' | sed -r 's|/[^/]+$||' |sort |uniq | while read line; do
+  find . -type f -name 'Gemfile' | sed -E 's|/[^/]+$||' |sort |uniq | while read line; do
     echo "Executing bundle install for $line"
     $(bundle_install $line) &
 

@@ -42,9 +42,15 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=59'
 
 # Bindings
 bindkey '^z' fancy-ctrl-z
+source $HOME/.fzf/shell/key-bindings.zsh
+
 # Machine specific setup
 # 
 
+export PATH=$PATH:~/.platformio/penv/bin
 [ -f ~/.custom.zsh ] && source ~/.custom.zsh
 
 # zprof
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

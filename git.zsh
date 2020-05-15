@@ -32,6 +32,7 @@ gnuke() {
 gsync() {
   git branch -r | grep -v '\->' | while read remote; do git branch --track "${remote#origin/}" "$remote"; done
   git branch --merged | egrep -v "(master)" | xargs git branch -d
+  git remote prune origin
   git fetch --all
   git pull --all
 }
