@@ -26,6 +26,7 @@ source ~/dotfiles/fancy-ctrl-z.zsh
 source ~/dotfiles/elixir.zsh
 source ~/dotfiles/python.zsh
 source ~/dotfiles/go.zsh
+source ~/dotfiles/ruby.zsh
 
 # Aliases
 alias weather="curl wttr.in/Berlin"
