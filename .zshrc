@@ -52,6 +52,3 @@ export PATH=$PATH:~/.platformio/penv/bin
 [ -f ~/.custom.zsh ] && source ~/.custom.zsh
 
 # zprof
-
-test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
-
