@@ -52,3 +52,5 @@ export PATH=$PATH:~/.platformio/penv/bin
 [ -f ~/.custom.zsh ] && source ~/.custom.zsh
 
 # zprof
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/openjdk/bin:$PATH"
