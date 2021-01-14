@@ -5,6 +5,7 @@ fi
 alias vim="nvim"
 alias vimconfig="vim ~/.config/nvim/init.vim"
 alias diary='vim -c "VimwikiMakeDiary" -c "Goyo"'
+alias vimwiki='vim -c "VimwikiIndex"'
 alias clearvim="rm -rf $HOME/.local/share/nvim/swap/"
 
 # Preferred editor for local and remote sessions

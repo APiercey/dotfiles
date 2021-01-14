@@ -10,3 +10,4 @@ else
 fi
 
 alias zshconfig="vim ~/.zshrc"
+setopt INC_APPEND_HISTORY

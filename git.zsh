@@ -37,6 +37,16 @@ gsync() {
   git pull --all
 }
 
+gh() (
+    git remote -v | grep push
+    remote=${1:-origin}
+    echo "Using remote $remote"
+
+    URL=$(git config remote.$remote.url | sed "s/git@\(.*\):\(.*\).git/https:\/\/\1\/\2/")
+    echo "Opening $URL..."
+    open $URL
+)
+
 
 alias gs='git status'
 
