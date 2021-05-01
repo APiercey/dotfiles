@@ -62,12 +62,13 @@ alias zshconfig="vim ~/.zshrc"
 
 # Bindings
 bindkey '^z' fancy-ctrl-z
-source $HOME/.fzf/shell/key-bindings.zsh
+# source $HOME/.fzf/shell/key-bindings.zsh
 
 # Machine specific setup
 # 
 
 export PATH=$PATH:~/.platformio/penv/bin
+export PATH=$PATH:~/.local/bin/flutter/bin
 [ -f ~/.custom.zsh ] && source ~/.custom.zsh
 
 # zprof
