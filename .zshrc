@@ -69,6 +69,7 @@ bindkey '^z' fancy-ctrl-z
 
 export PATH=$PATH:~/.platformio/penv/bin
 export PATH=$PATH:~/.local/bin/flutter/bin
+
 [ -f ~/.custom.zsh ] && source ~/.custom.zsh
 
 # zprof
