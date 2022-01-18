@@ -19,7 +19,6 @@ source ~/dotfiles/tmux.zsh
 source ~/dotfiles/docker.zsh
 source ~/dotfiles/web_search.zsh
 source ~/dotfiles/forgit.zsh
-source ~/dotfiles/zsh-256color.zsh
 source ~/dotfiles/fancy-ctrl-z.zsh
 
 # Language files
