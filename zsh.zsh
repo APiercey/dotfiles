@@ -10,7 +10,5 @@ else
 fi
 
 alias zshconfig="vim ~/.zshrc"
-setopt inc_append_history
-setopt hist_ignore_dups
-setopt hist_ignore_space
 
+setopt INC_APPEND_HISTORY

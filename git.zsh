@@ -37,6 +37,17 @@ gsync() {
   git pull --all
 }
 
+gh() (
+    git remote -v | grep push
+    remote=${1:-origin}
+    echo "Using remote $remote"
+
+    URL=$(git config remote.$remote.url | sed "s/git@\(.*\):\(.*\).git/https:\/\/\1\/\2/")
+    echo "Opening $URL..."
+    open $URL
+)
+
+
 alias gs='git status'
 
 # if FZF does not exist, don't continue
@@ -51,4 +62,13 @@ gcob() {
   git checkout $(echo "$branch" | awk '{print $1}' | sed "s/.* //")
 }
 
-
+gshow() {
+  git log --graph --color=always \
+      --format="%C(auto)%h%d %s %C(black)%C(bold)%cr" "$@" |
+  fzf --ansi --no-sort --reverse --tiebreak=index --bind=ctrl-s:toggle-sort \
+      --bind "ctrl-m:execute:
+                (grep -o '[a-f0-9]\{7\}' | head -1 |
+                xargs -I % sh -c 'git show --color=always % | less -R') << 'FZF-EOF'
+                {}
+FZF-EOF"
+}
