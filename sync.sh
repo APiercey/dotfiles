@@ -1,7 +1,3 @@
-# .local/share
-# mkdir -p ~/.local
-# mkdir -p ~/.local/share
-
 # .config
 mkdir -p ~/.config
 (ln -sf ~/dotfiles/.config/htop ~/.config/htop)
@@ -13,7 +9,6 @@ mkdir -p ~/.config
 (ln -sf ~/dotfiles/.tmux.conf ~/)
 (ln -sf ~/dotfiles/.tmux ~/)
 (ln -sf ~/dotfiles/.bin ~/)
-(ln -sf ~/dotfiles/.zpreztorc ~/)
 
 # Ranger setup - because its a bit more specific
 mkdir -p ~/.config/ranger
