@@ -57,6 +57,7 @@ alias ll='ls -lhaG'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias profile='repeat 5 time zsh -i -c exit'
 alias zshconfig="vim ~/.zshrc"
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
 
 # Functions
 
