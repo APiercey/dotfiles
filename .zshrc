@@ -4,6 +4,10 @@ source ~/dotfiles/zim.zsh
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/bin
 export PATH="$HOME/.tfenv/bin:$PATH"
+export PATH=$PATH:~/.platformio/penv/bin
+export PATH=$PATH:~/.local/bin/flutter/bin
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Main config files
 source ~/dotfiles/zsh.zsh
@@ -36,24 +40,18 @@ alias ll='ls -lhaG'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias profile='repeat 5 time zsh -i -c exit'
 alias zshconfig="vim ~/.zshrc"
-alias qrubocop='git add --refresh .; git diff --name-only origin/master | grep .rb | xargs rubocop -A'
+alias qrubocop='git add --refresh .; git diff --name-only origin/master --diff-filter=d | grep .rb | xargs rubocop -A'
 
 # Functions
 
 # Bindings
 bindkey '^z' fancy-ctrl-z
-# source $HOME/.fzf/shell/key-bindings.zsh
 
 # Machine specific setup
-# 
-
-export PATH=$PATH:~/.platformio/penv/bin
-export PATH=$PATH:~/.local/bin/flutter/bin
-
 [ -f ~/.custom.zsh ] && source ~/.custom.zsh
 
-# zprof
+# Java just _needs_ to be last...
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
 
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+# zprof
