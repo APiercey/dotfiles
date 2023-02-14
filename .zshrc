@@ -40,7 +40,8 @@ alias ll='ls -lhaG'
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
 alias profile='repeat 5 time zsh -i -c exit'
 alias zshconfig="vim ~/.zshrc"
-alias qrubocop='git add --refresh .; git diff --name-only origin/master --diff-filter=d | grep .rb | xargs rubocop -A'
+alias get_idf='. $HOME/esp/esp-idf/export.sh'
+alias qrubocop='git add --refresh .; git diff --name-only origin/master | grep .rb | xargs rubocop -A'
 
 # Functions
 

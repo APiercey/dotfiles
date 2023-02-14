@@ -9,6 +9,7 @@ mkdir -p ~/.config
 (ln -sf ~/dotfiles/.tmux.conf ~/)
 (ln -sf ~/dotfiles/.tmux ~/)
 (ln -sf ~/dotfiles/.bin ~/)
+(ln -sf ~/dotfiles/.zimrc ~/.zimrc)
 
 # Ranger setup - because its a bit more specific
 mkdir -p ~/.config/ranger
