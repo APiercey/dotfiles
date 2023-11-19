@@ -3,7 +3,7 @@ if ! command -v nvim > /dev/null 2>&1; then
 fi
 
 alias vim="nvim"
-alias vimconfig="vim ~/.config/nvim/init.vim"
+alias vimconfig="vim ~/.config/nvim/init.lua"
 alias diary='vim -c "VimwikiMakeDiary" -c "Goyo"'
 alias vimwiki='vim -c "VimwikiIndex"'
 alias clearvim="rm -rf $HOME/.local/share/nvim/swap/"

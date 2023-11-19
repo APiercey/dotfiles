@@ -68,3 +68,18 @@ gshow() {
                 {}
 FZF-EOF"
 }
+
+changes_pending() {
+  echo $(git status --short | wc -l)
+}
+
+update_repo() {
+  if [ "$(changes_pending)" -eq 0 ]; then
+      echo "No local changes... Switching to master and updating"
+      git checkout master
+      git pull origin master
+      echo "... Done!"
+  else
+      echo "Pending changes! Aborting!"
+  fi
+}

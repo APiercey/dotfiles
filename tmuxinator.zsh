@@ -20,8 +20,9 @@ _tmuxinator() {
   return
 }
 
-if command -v tmuxinator > /dev/null 2>&1; then
-  compdef _tmuxinator tmuxinator mux
-  alias mux="tmuxinator"
+if ! command -v tmuxinator > /dev/null 2>&1; then
+  return 0;
 fi
 
+compdef _tmuxinator tmuxinator mux
+alias mux="tmuxinator"
